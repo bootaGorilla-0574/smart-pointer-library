@@ -164,7 +164,7 @@ class WeekPtr{
         }
     }
     bool expired(){
-        return (wp->strongCount == nullptr || *wp->strongCount == 0);
+        return (wp == nullptr || wp->strongCount == nullptr || *wp->strongCount == 0);
     }   
 };
 
